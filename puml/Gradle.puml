@@ -6,6 +6,7 @@
   * maven과 어떤 관계인가? 더 큰 장점이 있나?
   * plugin은 뭐지?
   * SpringBoot등에서 사용하는 Embedded Tomcat 플러그인 같은건 어떻게 동작하는건가?
+  * 기존 maven 프로젝트를 쉽게 변환할 수 있나?
  * 학습시작
   * gradle.org
    * Accelerate developer productivity : 생산성을 향상시켜라? 생산성 향상에 도움이 되나?
