@@ -4,6 +4,7 @@
  * 학습 시작전에 궁금한 것
   * 이건 빌드 툴인가??
   * maven과 어떤 관계인가? 더 큰 장점이 있나?
+   * 성능이 압도적으로 빠르다네... 그런가?
   * plugin은 뭐지?
   * SpringBoot등에서 사용하는 Embedded Tomcat 플러그인 같은건 어떻게 동작하는건가?
   * 기존 maven 프로젝트를 쉽게 변환할 수 있나?
@@ -24,5 +25,54 @@
     * Getting Started
      * 다양한 형태의 예제가 있다.
       * Building Java Applications
-       
+       * Groovy DSL을 내려 받아서 IntelliJ로 바로 임포트 해볼 수 있다.
+       * Gradle 설정이 Groovy문법으로 되어 있느냐 Kotlin 문법으로 되어 있느냐의 차이
+       *[#ffaaaa] (추가학습) Gradle 7.0.2 를 다운 받고, 이리저리 스크립트가 수행되더니 `Starting Gradle Daemon...` 문구 나타남.
+       * 원래 디렉토리 만들고 gradle init 해서 프로젝트 세팅하는 방식. 임포트는 그렇게 생성된 프로젝트.
+       * 임포트 구조와 파일 설명
+        * project
+         * gradle : generated folder for wrapper files
+          * wrapper
+           * gradle-wrapper.jar
+           * gradle-wrapper.properties
+         * gradlew : Gradle wrapper start scripts
+         * gradlew.bat : Gradle wrapper start scripts
+         * settings.gradle : Settings file to define build name and subprojects
+         * app
+          * build.gradle : Build script of app project
+          * src
+           * main
+            * java : Default Java source folder
+             * demo
+              * App.java
+           * test : Default Java test source folder
+            * java
+             * demo
+              * AppTest.java
+       * 상세설명
+        * settings.gradle
+         * 루트 프로젝트 이름
+         * 하위 프로젝트 정의
+          * 빌드가 실제 코드와 빌드 로직을 포함하는 하위 프로젝트를 가질 수 있고, 여러개 추가할 수 있음
+        * app/build.gradle
+         * plugins
+          * 예전에는 apply plugin : pluginName 과 같은 방식으로 열거 해서 썼었는데 개선되어서 plugins 라는 블럭으로 처리하게 됨.
+          * https://doughman.tistory.com/19
+         * repositories
+         * dependencies
+         * application
+       * Run the application
+        * plugins에 application plugin을 추가한 경우 command line 에서 바로 application을 실행할 수 있다.
+         * ./gradlew run
+       * Bundle the appliction
+        * application plugin은 모든 의존성과 함께 어플리케이션을 번들링할 수 있다.
+         * ./gradle build
+         * app/build 디렉토리에 결과 나옴.
+       * Publish a Build scan
+        * 앞에서 봤던 build scan을 publish함.
+        * 클라우드 형태로 처리되는 듯 하고.. 빌드 결과를 상세히 리포팅 해줌. 
+        * Gradle Enterprise 로 기업용 서비스인듯. 아마 유료되려나?
+       * Next steps 
+        * Building Java & JVM projects
+        * Java Application Plugin documentation
 @endmindmap
