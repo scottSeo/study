@@ -1,3 +1,3 @@
 # study
 
-[Gradle](./puml/Gradle.puml)
+[Gradle](./Gradle.md)
