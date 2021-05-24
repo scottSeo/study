@@ -1,0 +1,27 @@
+@startmindmap
+
+* Gradle
+ * 학습 시작전에 궁금한 것
+  * 이건 빌드 툴인가??
+  * maven과 어떤 관계인가? 더 큰 장점이 있나?
+  * plugin은 뭐지?
+  * SpringBoot등에서 사용하는 Embedded Tomcat 플러그인 같은건 어떻게 동작하는건가?
+ * 학습시작
+  * gradle.org
+   * Accelerate developer productivity : 생산성을 향상시켜라? 생산성 향상에 도움이 되나?
+   * Gradle Build Tool 이라고 부르네. 일단 빌드 툴이긴 한 모양이다.
+   * 학습 가이드 : Install Gradle - Get Started Guides - Free Training
+    * Install Gradle
+     * 현재 Gradle 최신 버전은 7.0.2 
+     * 사전조건 : JDK 8 or higher
+     *[#ffaaaa] (추가학습) build scans : new visual build inspection tool
+      * Installing 
+       * with Package Manager
+        * SDKMAN과 Homebrew를 지원. 다른 패키지들도 지원하지만 Gradle에 의해 컨트롤 되는 것이 아님.
+       * Manually
+      *[#ffaaaa] (추가학습) Upgrade with the Gradle Wrapper
+    * Getting Started
+     * 다양한 형태의 예제가 있다.
+      * Building Java Applications
+       
+@endmindmap
