@@ -1,4 +1,6 @@
-> 참고 : https://www.baeldung.com/configuration-properties-in-spring-boot# @ConfigurationProperties
+> 참고 : https://www.baeldung.com/configuration-properties-in-spring-boot
+ 
+# @ConfigurationProperties
 
 ## 소개
 - Since 1.0.0 시절 부터 있었으니 Spring Boot면 그냥 다 된다고 봐야겠다.
