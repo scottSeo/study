@@ -47,3 +47,19 @@
 - pom.xml 파일을 우클릭하여 [Git] - [Add] 선택하고 git의 관리를 받는 파일로 지정하자.
 - 이후 첫번째 커밋을 해보자.
 - 커밋 메세지는 Maven Project initializing.
+
+## github 원격 저장소 관리
+- 내 로컬에만 가지고 있으면 언제든지 날려먹을 수 있다.
+- 원격 저장소를 두고 원격 저장소에도 저장한다.
+- 원격 저장소는 github에 두자.
+- 프로젝트 네비게이션에서 우클릭하여 [Git] - [Manage Remotes] 를 선택한다.
+- 원격 저장소의 URL을 설정하도록 되어 있는데 일단은 원격 저장소가 없는 상태이니 github로 가서 원격 저장소를 만들자.
+- github에 접속하고 어느 경로로든 접근해서 create new repository를 하자.
+- 적절한 이름을 선택하고 아직은 공개하기 좀 아쉬우니 `private`으로 설정할까?
+    - 나중에 repository 설정을 통해 public 으로 변경할 수도 있고 다른 곳으로 옮길 수도 있다.
+- 아래 `Add a README file`, `Add .gitignore`, `Choose a license` 체크박스도 일단 무시하자. 전부 직접 관리할테니.
+- 원격 저장소를 만들고 이제 원격 저장소 주소를 확인할 수 있다. 
+- 다시 IntelliJ로 돌아가서 이 원격 저장소를 등록한다. 일반적으로 원격 저장소는 `origin`이라는 이름을 쓴다.
+- 이제 원격 저장소로 push 할 수 있게 되었다.
+- 프로젝트 네비게이션에서 우클릭 하여 [Git] - [Push] 를 선택하고, 확인, 다시 한번 [Push]를 선택한다.
+- 다시 github에 생성한 Repository에 가보면 방금 push 한 파일이 올라와있다.
