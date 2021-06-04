@@ -78,5 +78,6 @@ public class TestController {
 - 그냥 루트 path (/) 요청에 "HELLO"라고 응답하는 Controller 코드를 작성해봤다.
 - 지금 작성한 클래스가 적용되기 위해서 서버 재시작이 필요하다. 
 - 서버 재시작 후 다시 `http://localhost:8080`에 접근하면 "HELLO"메시지를 볼 수 있다.
+- 여기까지를 `spring-boot-web` 브랜치로 저장하고 push 하자.
 
 > 참고 : https://goddaehee.tistory.com/238
